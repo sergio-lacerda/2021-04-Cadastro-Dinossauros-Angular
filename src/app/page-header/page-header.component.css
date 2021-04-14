@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'stonedheightsregular';
+    src: url('/assets/stonedheights-webfont.woff2') format('woff2'),
+         url('/assets/stonedheights-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#cabecalho {
+    background-color: rgb(3, 39, 3);
+}
+
+h1 {
+    font-family: 'stonedheightsregular', 'Calibri';
+    color: rgb(168, 194, 123);
+    font-size: 60px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px; 
+    margin-bottom: 0px !important;
+}
+
+.menu {
+    background-color: rgb(0, 71, 0);
+    color: white;  
+    text-align: center;  
+}
+
+.botao_menu {
+    padding: 8px 30px 8px 30px;
+    font-size: 16px;
+}

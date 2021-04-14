@@ -1,0 +1,46 @@
+{
+  "Dinossauros": [
+    {
+      "id": 1,
+      "nome": "Tyranosaurus rex",
+      "altura": "4.00",
+      "comprimento": "12.00",
+      "peso": "9.00"
+    },
+    {
+      "id": 2,
+      "nome": "Brachiosaurus altithorax",
+      "altura": "12.00",
+      "comprimento": "23.00",
+      "peso": "80.00"
+    },
+    {
+      "id": 3,
+      "nome": "Brontosaurus excelsus",
+      "altura": "4.50",
+      "comprimento": "22.00",
+      "peso": "40.00"
+    },
+    {
+      "id": 4,
+      "nome": "Triceratops horridus",
+      "altura": "2.00",
+      "comprimento": "9.00",
+      "peso": "5.00"
+    },
+	{
+      "id": 5,
+      "nome": "Stegosaurus stenops",
+      "altura": "6.00",
+      "comprimento": "6.50",
+      "peso": "2.00"
+    },
+	{
+      "id": 6,
+      "nome": "Plateosaurus",
+      "altura": "4.50",
+      "comprimento": "8.00",
+      "peso": "4.00"
+    }
+  ]
+}
