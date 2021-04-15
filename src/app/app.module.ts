@@ -10,8 +10,10 @@ import {MatTableModule} from '@angular/material/table';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
+
 import { Creditos } from './creditos/creditos.component';
 import { PageHeader } from './page-header/page-header.component';
+import { PerfilCardComponent } from './perfil-card/perfil-card.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { PageHeader } from './page-header/page-header.component';
     Dinossauro,
     DinossauroLista,
     Creditos,
-    PageHeader    
+    PageHeader,
+    PerfilCardComponent    
   ],
   imports: [
     BrowserModule,
@@ -28,7 +31,7 @@ import { PageHeader } from './page-header/page-header.component';
     MatTableModule,
     MatButtonModule,
     MatIconModule,
-    MatMenuModule
+    MatMenuModule    
   ],
   providers: [],
   bootstrap: [AppComponent]

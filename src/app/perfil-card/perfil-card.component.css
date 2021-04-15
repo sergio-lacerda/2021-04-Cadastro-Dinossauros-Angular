@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'stonedheightsregular';
+    src: url('/assets/stonedheights-webfont.woff2') format('woff2'),
+         url('/assets/stonedheights-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h2 {
+    font-family: 'stonedheightsregular', 'Calibri';
+    color: #e1e5a8;
+    font-size: 50px;
+    text-align: center;    
+    padding-bottom: 5px; 
+    margin-top: 30px;   
+}
+
+h3 {    
+    
+    font-size: 20px;
+    text-align: center;    
+    padding-bottom: 18px;    
+    margin-bottom: 30px;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+#card {    
+    background-color: #074b60;  
+    color: #d9f2fa;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;	
+	flex-direction: row;
+    align-items: center;    
+}
+
+#foto {
+    padding: 20px;
+}
+
+#social {
+    padding: 20px;
+    text-align: center;    
+    margin-bottom: 30px;
+    flex: 1 0 auto; 
+}
+
+.social-icons a {
+    color: #d9f2fa;
+    font-size: 18px;
+    padding-right: 20px;    
+}
+

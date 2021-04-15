@@ -6,19 +6,3 @@
     background-image: url("/assets/dino.jpg");    
     height: 100%;      
 }
-
-#wrapper {
-    display: flex;
-    flex-direction: row;    
-}
-
-#info {
-    background-color: teal;
-    height: 60%;
-    width: 45%;
-    flex: 1 0 auto;     
-}
-
-#info2 {
-    background-color: yellow;        
-}
