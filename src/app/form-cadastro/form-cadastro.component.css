@@ -1,0 +1,66 @@
+.form-cadastro {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;    
+    background-color: #074b60;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .example-full-width {
+    width: 100%;        
+  }
+  
+  td {
+    padding-right: 15px;
+  }
+
+  input {
+      margin-left: 15px;
+      font-size: 14px;
+  }
+
+  #content {    
+    margin-top: 50px;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .botoes {      
+      margin-bottom: 20px;
+  }
+
+  .botoes a {
+      width: 120px;
+      margin-top: 15px;
+      margin-bottom: 10px;
+  }
+
+  .botao-meio {
+      margin-right: 30px;
+      margin-left: 30px;
+  }
+
+  .laranja {
+      background-color: orange;
+      color: rgb(92, 40, 16);
+  }
+
+  .vermelho {
+    background-color: red;
+    color: white;
+  }
+
+  .verde {
+    background-color: lightgreen;
+    color: darkgreen;
+  }
+
+  table {
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
