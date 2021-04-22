@@ -7,7 +7,7 @@ import { DinossauroLista } from './dinossauro-lista/dinossauro-lista.component';
 const routes: Routes = [
   { path: '', component: DinossauroLista },
   { path: 'creditos', component: Creditos },
-  { path: 'cadastro', component: DinossauroCadastro }
+  { path: 'cadastro/:id', component: DinossauroCadastro }
 ];
 
 @NgModule({

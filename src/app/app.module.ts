@@ -6,11 +6,12 @@ import { AppComponent } from './app.component';
 import { Dinossauro } from './dinossauro/dinossauro.component';
 import { DinossauroLista } from './dinossauro-lista/dinossauro-lista.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatTableModule} from '@angular/material/table';
-import {MatButtonModule} from '@angular/material/button';
-import {MatIconModule} from '@angular/material/icon';
-import {MatMenuModule} from '@angular/material/menu';
-import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatTableModule } from '@angular/material/table';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { FormsModule }   from '@angular/forms';
 
 import { Creditos } from './creditos/creditos.component';
 import { PageHeader } from './page-header/page-header.component';
@@ -37,7 +38,8 @@ import { FormCadastroComponent } from './form-cadastro/form-cadastro.component';
     MatButtonModule,
     MatIconModule,
     MatMenuModule,
-    MatFormFieldModule 
+    MatFormFieldModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

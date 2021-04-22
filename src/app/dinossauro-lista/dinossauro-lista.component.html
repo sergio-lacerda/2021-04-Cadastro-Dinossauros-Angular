@@ -1,7 +1,7 @@
 <div id="container">   
     
-    <spa-page-header [pageTitle]="pageTitle"></spa-page-header>    
-
+    <spa-page-header [pageTitle]="pageTitle"></spa-page-header>   
+    
     <div id="tabela">
             
         <table mat-table [dataSource]="dinoList" class="mat-elevation-z8">           
@@ -18,32 +18,29 @@
             
             <ng-container matColumnDef="Altura">
             <th mat-header-cell *matHeaderCellDef> Altura </th>
-            <td mat-cell *matCellDef="let element"> {{element.altura}} </td>
+            <td mat-cell *matCellDef="let element"> {{element.altura | number: '1.2-2'}} </td>
             </ng-container>
             
             <ng-container matColumnDef="Comprimento">
             <th mat-header-cell *matHeaderCellDef> Comprimento </th>
-            <td mat-cell *matCellDef="let element"> {{element.comprimento}} </td>
+            <td mat-cell *matCellDef="let element"> {{element.comprimento | number: '1.2-2'}} </td>
             </ng-container>
         
             <ng-container matColumnDef="Peso">
                 <th mat-header-cell *matHeaderCellDef> Peso </th>
-                <td mat-cell *matCellDef="let element"> {{element.peso}} </td>
+                <td mat-cell *matCellDef="let element"> {{element.peso | number: '1.2-2'}} </td>
             </ng-container>
 
             <ng-container matColumnDef="Ações">
                 <th mat-header-cell *matHeaderCellDef> Ações </th>
                 <td mat-cell *matCellDef="let element">                                        
-                    <a href="http://www.google.com" target="_blank">
-                        <button mat-mini-fab aria-label="Editar" class="botao_editar">
-                            <mat-icon>edit</mat-icon>
-                        </button>
-                    </a>
-                    <a href="http://www.google.com" target="_blank">
-                        <button mat-mini-fab aria-label="Editar" class="botao_apagar">
-                            <mat-icon>delete_forever</mat-icon>
-                        </button>
-                    </a>
+                    <button mat-mini-fab [routerLink]="['/cadastro', element.id]" aria-label="Editar" class="botao_editar">
+                        <mat-icon>edit</mat-icon>
+                    </button>
+                                        
+                    <button mat-mini-fab routerLink="/cadastro" aria-label="Editar" class="botao_apagar">
+                        <mat-icon>delete_forever</mat-icon>
+                    </button>                    
                 </td>
             </ng-container>
             
