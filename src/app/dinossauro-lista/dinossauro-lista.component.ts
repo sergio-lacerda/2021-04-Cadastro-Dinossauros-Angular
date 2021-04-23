@@ -18,7 +18,26 @@ export class DinossauroLista implements OnInit {
   constructor(private ds: DinossauroDataService) { }
 
   ngOnInit(): void {
-    this.dinoList = this.ds.getAll();
+    this.getAll();
+  }
+
+  getAll(): void {
+    this.ds.getAll().subscribe({
+      next: dList => {
+        this.dinoList = dList;
+      },
+      error: err => console.log(err)
+    });
+  }
+
+  deleteById(id: number): void {
+    this.ds.deleteById(id).subscribe({
+      next: ()=> { 
+                    console.log("Excluído com sucesso!");
+                    this.getAll();
+                 },
+      error: err => console.log(err)
+    });
   }
 
 }

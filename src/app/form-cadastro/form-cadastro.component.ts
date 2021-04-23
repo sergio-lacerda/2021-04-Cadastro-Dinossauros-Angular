@@ -18,12 +18,20 @@ export class FormCadastroComponent implements OnInit {
   { }
 
   ngOnInit(): void {
-    this.dino = this.ds.getById( +this.rotaAtiva.snapshot.paramMap.get('id') );  
+    this.ds.getById( +this.rotaAtiva.snapshot.paramMap.get('id') ).subscribe({
+      next: auxDino => this.dino = auxDino,
+      error: err => this.dino = new Dinossauro()
+    });    
+
   }
 
   save(): void {
-    this.ds.save(this.dino);
+    this.ds.save(this.dino).subscribe({
+      next: auxDino => console.log('Salvo com sucesso!'),
+      error: err => console.log(err)
+    });
+
     this.router.navigate(['']);
-  }
+  }  
 
 }

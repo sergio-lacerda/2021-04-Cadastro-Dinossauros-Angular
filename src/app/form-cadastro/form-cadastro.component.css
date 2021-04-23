@@ -31,13 +31,16 @@
   }
 
   .botoes {      
-      margin-bottom: 20px;
+      margin-bottom: 20px;   
+      align-items: center;   
   }
 
   .botoes a {
       width: 120px;
       margin-top: 15px;
       margin-bottom: 10px;
+      margin-right: 30px;
+      margin-left: 30px;
   }
 
   .botao-meio {

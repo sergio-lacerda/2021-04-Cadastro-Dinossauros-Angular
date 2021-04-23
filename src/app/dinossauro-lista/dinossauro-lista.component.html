@@ -1,6 +1,6 @@
 <div id="container">   
     
-    <spa-page-header [pageTitle]="pageTitle"></spa-page-header>   
+    <spa-page-header [pageTitle]="pageTitle"></spa-page-header>  
     
     <div id="tabela">
             
@@ -38,7 +38,7 @@
                         <mat-icon>edit</mat-icon>
                     </button>
                                         
-                    <button mat-mini-fab routerLink="/cadastro" aria-label="Editar" class="botao_apagar">
+                    <button mat-mini-fab (click)='deleteById(element.id)' aria-label="Apagar" class="botao_apagar">
                         <mat-icon>delete_forever</mat-icon>
                     </button>                    
                 </td>

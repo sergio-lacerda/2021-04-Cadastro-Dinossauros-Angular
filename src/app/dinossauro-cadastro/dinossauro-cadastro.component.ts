@@ -8,7 +8,7 @@ import { Component, OnInit, Output } from '@angular/core';
 export class DinossauroCadastro implements OnInit {
 
   @Output()
-  pageTitle = 'Edição de Dinossauro';
+  pageTitle = 'Editar Dinossauro';
 
   constructor() { }
 

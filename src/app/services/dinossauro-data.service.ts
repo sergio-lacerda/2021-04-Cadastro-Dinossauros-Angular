@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Dinossauro } from '../dinossauro/dinossauro.component';
 
 @Injectable({
@@ -6,52 +8,31 @@ import { Dinossauro } from '../dinossauro/dinossauro.component';
 })
 export class DinossauroDataService {
 
-  getAll(): Dinossauro[] {
-    return dados_dinossauros;
+  private apiUrl: string = 'http://localhost:3000/Dinossauros';
+
+  constructor(private httpClient: HttpClient) { 
+
   }
 
-  getById(id: Number): Dinossauro {
-    return dados_dinossauros.find( (dino: Dinossauro) => dino.id === id );
+  getAll(): Observable<Dinossauro[]> {
+    return this.httpClient.get<Dinossauro[]>(this.apiUrl);
   }
 
-  save(dino: Dinossauro): void {
+  getById(id: Number): Observable<Dinossauro> {
+    return this.httpClient.get<Dinossauro>(`${this.apiUrl}/${id}`);
+  }
+
+  deleteById(id: Number): Observable<any> {
+    return this.httpClient.delete<any>(`${this.apiUrl}/${id}`);
+  }
+
+  save(dino: Dinossauro): Observable<Dinossauro> {
     if (dino.id){
-      const index = dados_dinossauros.findIndex( (d: Dinossauro) => d.id === dino.id );
-      dados_dinossauros[index] = dino;
+      return this.httpClient.put<Dinossauro>(`${this.apiUrl}/${dino.id}`, dino);
+    }
+    else {
+      return this.httpClient.post<Dinossauro>(`${this.apiUrl}`, dino);
     }
   }
 
-  constructor() { }
 }
-
-
-var dados_dinossauros: Dinossauro[] = [
-  {
-    "id": 1,
-    "nome": "Tyranosaurus rex",
-    "altura": 4.00,
-    "comprimento": 12.00,
-    "peso": 9.00
-  },
-  {
-    "id": 2,
-    "nome": "Brachiosaurus altithorax",
-    "altura": 12.00,
-    "comprimento": 23.00,
-    "peso": 80.00
-  },
-  {
-    "id": 3,
-    "nome": "Brontosaurus excelsus",
-    "altura": 4.50,
-    "comprimento": 22.00,
-    "peso": 40.00
-  },
-  {
-    "id": 4,
-    "nome": "Focinhossauro Rex",
-    "altura": 12.36,
-    "comprimento": 25.20,
-    "peso": 53.67
-  }  
-];
