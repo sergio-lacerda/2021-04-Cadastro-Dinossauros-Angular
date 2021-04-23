@@ -1,27 +1,57 @@
-# Dinossauroscad
+# Cadastro de Dinossauros (Angular)
+## Sobre
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.
+Este projeto é apenas um exemplo de auto estudo abordando conceitos básicos de desenvolvimento de uma SPA (Single Page Application) em Angular.
 
-## Development server
+## Screenshots
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+![Tela inicial](https://github.com/sergio-lacerda/2021-04-Cadastro-Dinossauros-Angular/blob/master/documentacao/01-tela-inicial.jpg)
+![Tela de cadastro](https://github.com/sergio-lacerda/2021-04-Cadastro-Dinossauros-Angular/blob/master/documentacao/01-tela-cadastro.jpg)
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Listagem de dinossauros
+- Cadastro de novos dinossauros
+- Alteração de dados de dinossauros
+- Exclusão de dinossauros
+- Página de créditos
 
-## Build
+## Tecnologias
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+O presente projeto foi desenvolvido utilizando as seguintes tecnologias
 
-## Running unit tests
+- [Angular](https://angular.io/)
+- [Angular CLI](https://github.com/angular/angular-cli)
+- [Angular Material](https://material.angular.io/)
+- [JSON Server](https://www.npmjs.com/package/json-server)
+- HTML / CSS
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Instalação
 
-## Running end-to-end tests
+- Obtenha o arquivo de dados de dinossauros (db.json) que se encontra na pasta  "2021-04-Cadastro-Dinossauros-Angular\src\assets";
+- Crie uma pasta para ser seu servidor de dados e copie o arquivo db.json para essa pasta.
+- Caso não possua o JSON Server instalado, execute o seguinte comando:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+```sh
+npm install -g json-server 
+```
 
-## Further help
+- Inicie o JSON Server:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```sh
+json-server --watch db.json
+```
+
+- Vá até a pasta raiz do projeto e instale:
+
+```sh
+cd 2021-04-Cadastro-Dinossauros-Angular
+npm install
+```
+
+- Execute o projeto:
+
+```sh
+ng serve -o
+```
+
