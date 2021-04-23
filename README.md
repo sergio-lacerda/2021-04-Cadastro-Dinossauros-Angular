@@ -6,7 +6,7 @@ Este projeto é apenas um exemplo de auto estudo abordando conceitos básicos de
 ## Screenshots
 
 ![Tela inicial](https://github.com/sergio-lacerda/2021-04-Cadastro-Dinossauros-Angular/blob/master/documentacao/01-tela-inicial.jpg)
-![Tela de cadastro](https://github.com/sergio-lacerda/2021-04-Cadastro-Dinossauros-Angular/blob/master/documentacao/01-tela-cadastro.jpg)
+![Tela de cadastro](https://github.com/sergio-lacerda/2021-04-Cadastro-Dinossauros-Angular/blob/master/documentacao/02-tela-cadastro.jpg)
 
 ## Features
 
